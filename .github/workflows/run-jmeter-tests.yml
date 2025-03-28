@@ -22,6 +22,11 @@ jobs:
         tar -xzf apache-jmeter-5.6.3.tgz
         mv apache-jmeter-5.6.3 jmeter
 
+    - name: Debug JMeter Directory
+        run: |
+          ls -R
+          ls -R jmeter
+
     - name: Run JMeter Test Plan
       run: |
         ./jmeter/bin/jmeter -n -t jmeter/blazedemo_test_plan.jmx -l results.jtl
