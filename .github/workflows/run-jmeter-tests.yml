@@ -23,9 +23,9 @@ jobs:
         mv apache-jmeter-5.6.3 jmeter
 
     - name: Debug JMeter Directory
-        run: |
-          ls -R
-          ls -R jmeter
+      run: |
+        ls -R
+        ls -R jmeter
 
     - name: Run JMeter Test Plan
       run: |
