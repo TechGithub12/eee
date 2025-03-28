@@ -24,7 +24,6 @@ jobs:
 
     - name: Debug JMeter Directory
       run: |
-        ls -R
         ls -R jmeter
 
     - name: Run JMeter Test Plan
