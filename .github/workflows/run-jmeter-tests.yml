@@ -35,3 +35,4 @@ jobs:
       with:
         name: jmeter-results
         path: results.jtl
+              results_html
